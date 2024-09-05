@@ -1,8 +1,7 @@
 .slider{
     display: flex;
     flex-direction: column;
-    background-color: red;
-    
+    gap: 1rem;
 }
 .slider__active{
     display: flex;
@@ -20,4 +19,10 @@
 .slider__thumbnails__img{
     width: 6vw;
     border-radius: 1rem;
+    transition: all ease-in-out .2s;
+}
+.slider__thumbnails__img:hover{
+    cursor: pointer;
+    opacity: 50%;
+    box-shadow: rgb(255, 125, 26) 0px 1px 4px, rgb(255, 125, 26) 0px 0px 0px 3px;
 }

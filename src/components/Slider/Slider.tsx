@@ -49,13 +49,17 @@ export default function Slider() {
 					</div>
 				))}
 			</div>
-			{lightboxOpen && (
+			
+		</div>
+	);
+}
+
+/*
+{lightboxOpen && (
 				<Lightbox
 					images={data.map((item) => item.img)}
 					initialIndex={activeIndex}
 					onClose={closeLightbox}
 				/>
 			)}
-		</div>
-	);
-}
+*/

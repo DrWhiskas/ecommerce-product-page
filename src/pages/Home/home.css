@@ -1,3 +1,6 @@
 .home{
     padding: 1rem 15vw;
 }
+.home__container{
+    display: flex;
+}
