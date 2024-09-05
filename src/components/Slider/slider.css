@@ -1,0 +1,23 @@
+.slider{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    
+}
+.slider__active{
+    display: flex;
+}
+.slider__active__img{
+    width: 30vw;
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: 1rem;
+}
+.slider__thumbnails{
+    display: flex;
+    gap: 2rem;
+}
+.slider__thumbnails__img{
+    width: 6vw;
+    border-radius: 1rem;
+}

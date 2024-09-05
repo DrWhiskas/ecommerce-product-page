@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #E9E9E9;
+    align-items: center;
+
+}
+.header__links{
+    display: flex;
+    gap: 2rem;
+}
+.header__links__link{
+    color: #656668;
+    transition: all ease-in-out .1s;
+    padding: .8rem;
+}
+.header__links__link:hover{
+    color: black;
+    border-bottom: .2rem solid rgb(255, 125, 26);
+}
+.header__userPanel{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.header__userPanel__link{
+    color: black;
+    transition: all ease-in-out .1s;
+}
+.header__userPanel__link:hover{
+    color: rgb(255, 125, 26);;
+}
+.header__userPanel__link__img{
+    width: 3rem;
+}
+.header__userPanel__link__img:hover{
+     border: .2rem solid rgb(255, 125, 26);
+     border-radius: 100%;
+}
