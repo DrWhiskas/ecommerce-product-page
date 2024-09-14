@@ -1,12 +1,18 @@
 .infos{
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+    place-self: center;
 }
 .infos__subtitle{
     color: #74777D;
+    font-size:medium;
 }
 .infos__title{
     font-size: xx-large;
+    margin-top: -1rem;
+    font-size: calc(2vw + 16px);
+    width: 26vw;
 }
 .infos__text{
     width: 25vw;
