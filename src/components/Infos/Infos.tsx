@@ -1,6 +1,12 @@
 import React from "react";
 import './infos.css'
+import Add from "../Add/Add";
+
+
 export default function Infos(){
+
+
+
     return (
 			<section className="infos">
 				<h2 className="infos__subtitle">SNEAKER COMPANY</h2>
@@ -19,6 +25,8 @@ export default function Infos(){
                         $250.00
                     </div>
 				</div>
+				<Add />
 			</section>
+
 		);
 }
