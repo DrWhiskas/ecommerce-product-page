@@ -29,7 +29,7 @@
     transition: all ease-in-out .1s;
 }
 .header__userPanel__link:hover{
-    color: rgb(255, 125, 26);;
+    color: rgb(255, 125, 26);
 }
 .header__userPanel__link__img{
     width: 3rem;
