@@ -18,20 +18,20 @@ export default function Add({
 	
 	function AddArticle() {
 		setNb((prevNb) => {
-			const newNb = prevNb + 1; // Calcule la nouvelle valeur
-			console.log('nb = ', newNb); // Affiche la nouvelle valeur
-			return newNb; // Retourne la nouvelle valeur
+			const newNb = prevNb + 1;
+			console.log('nb = ', newNb); 
+			return newNb;
 		});
 	}
 
 	function RemoveArticle() {
 		setNb((prevNb) => {
 			if (prevNb > 0) {
-				const newNb = prevNb - 1; // Calcule la nouvelle valeur
-				console.log('nb = ', newNb); // Affiche la nouvelle valeur
-				return newNb; // Retourne la nouvelle valeur
+				const newNb = prevNb - 1; 
+				console.log('nb = ', newNb); 
+				return newNb; 
 			}
-			return prevNb; // Retourne l'ancienne valeur si nb est 0
+			return prevNb; 
 		});
 	}
 
