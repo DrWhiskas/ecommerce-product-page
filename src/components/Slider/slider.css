@@ -16,6 +16,9 @@
     display: flex;
     gap: 2rem;
 }
+.slider__active__img:hover{
+    cursor: pointer;
+}
 .slider__thumbnails__img{
     width: 6vw;
     border-radius: 1rem;

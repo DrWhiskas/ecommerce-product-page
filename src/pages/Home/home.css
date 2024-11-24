@@ -6,3 +6,11 @@
     justify-content: space-around;
     margin-top: 4rem;
 }
+
+@media screen and (max-width: 992px) {
+    .home__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

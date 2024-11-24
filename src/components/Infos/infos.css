@@ -38,3 +38,15 @@
 .infos__price__old{
     text-decoration: line-through;
 }
+
+@media screen and (max-width: 992px) {
+    .infos{
+        align-items: center;
+    }
+    .infos__title{
+        text-align: center;
+    }
+    .infos__text{
+        text-align: center;
+    }
+}
