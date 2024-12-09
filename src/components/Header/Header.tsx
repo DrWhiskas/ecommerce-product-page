@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import "./header.css"
-import Logo from "../../media/images/logo.svg"
-import { Link } from "react-router-dom";
-import { ShoppingCart } from "lucide-react";
+import React, { useState } from 'react';
+import './header.css';
+import Logo from '../../media/images/logo.svg';
+import { Link } from 'react-router-dom';
+import { ShoppingCart } from 'lucide-react';
 import Profil from '../../media/images/image-avatar.png';
-import Shop from "../Shop/Shop";
+import Shop from '../Shop/Shop';
 
 interface HeaderProps {
 	nb: number;
 	articleImg: string;
 	articleName: string;
 	articlePrice: number;
-	totalPrice: number
+	totalPrice: number;
 }
 
 export default function Header({
@@ -19,15 +19,21 @@ export default function Header({
 	articleImg,
 	articleName,
 	articlePrice,
-	totalPrice
+	totalPrice,
 }: HeaderProps) {
 	const [isOpen, setIsOpen] = useState(false);
-	totalPrice = nb + articlePrice
+	totalPrice = nb + articlePrice;
 	function toggleShopCart() {
 		setIsOpen(!isOpen);
 	}
+
+	const [showLinks, setShowLinks] = useState(false);
+	function handleShowLinks() {
+		setShowLinks(!showLinks);
+	}
+
 	return (
-		<header className="header">
+		<header className={showLinks ? 'header show-header' : 'header'}>
 			<Link to="/">
 				<img src={Logo} alt="Website's logo" />
 			</Link>
@@ -48,6 +54,10 @@ export default function Header({
 					<li className="header__links__link">Contact</li>
 				</Link>
 			</ul>
+			<button className="header__burger" onClick={handleShowLinks}>
+				<span className="burger-bar"></span>
+			</button>
+
 			<ul className="header__userPanel">
 				<li className="header__userPanel__link" onClick={toggleShopCart}>
 					<ShoppingCart />
